@@ -27,6 +27,9 @@
     <script src="js/app.js"></script>
     <link rel="stylesheet" href="css/index1.css">
     <style type="text/css">
+     
+    	
+
       .bgimg-1{
         
        background-image:  url("images/image3.jpg");         
@@ -75,7 +78,7 @@
                 <li><a href="cons_stats.html" id="topli"><b>Statistics</b></a></li>
                 <li><ul class="dropdown menu" data-dropdown-menu>
                             <li>
-                              <a href="#" class="ddmenua" id="lifeat" active style="font-size: 20px; color: #F0663B;"><b>Life At LNMIIT</b></a>
+                              <a href="#" class="ddmenua" id="lifeat" active style="font-size: 20px; color: #F0663B;"><b>Life at LNMIIT</b></a>
                               <ul class="menu">
                                 <li><a href="academics.html" class="ddmenu">Academic Momentum</a></li>
                                 <li><a href="Prof_societies.html" class="ddmenu">Professional Societies</a></li>
@@ -117,7 +120,7 @@
                             <br>
                         
                         </div>
-                        <div class="large-1 medium-1 column hide-for-small-only text-center"> 
+                        <div id='scroll_bar' class="large-1 medium-1 column hide-for-small-only text-center"> 
                           <div class= "row align-center" style="margin-top: 7em;" data-smooth-scroll>
                            <ul id="loc_bar" style="list-style-type: none" data-smooth-scroll>
                                <li style="padding: 3px,0px,0px,0px;height: 1.2em" data-smooth-scroll><a href="#About-us" id="about_button" class="button tiny" style="background-color:#FF8C00; border-radius: 10px"></a></li>
@@ -163,7 +166,7 @@
                 </div>
                 </div>
             </div>
-            <div class="large-1 column hide-for-small-only text-center"> 
+            <div id='scroll_bar' class="large-1 column hide-for-small-only text-center"> 
                   <div class= "row align-center" style="margin-top: 7em;" data-smooth-scroll>
                       <ul id="loc_bar" style="list-style-type: none" data-smooth-scroll >
                           <li style="padding: 0px,0px,0px,0px;height: 1.2em" data-smooth-scroll><a href="#About-us" class="button tiny hollow" style="border-color:#A0A0A0; border-radius: 10px;"></a></li> 
@@ -192,19 +195,22 @@
       
       
             <div class="row responsive1" style="height: 100px; max-width: 90%;" align="center">
-                <div><img src="images/amazon.jpg" alt="amazon"></div>
-                <div><img src="images/microsoft.jpg" alt="microsoft"></div>
-                <div><img src="images/adobe.jpg" alt="Adobe"></div>
-                <div><img src="images/Dailyhunt.jpg" alt="Dailyhunt"></div>
+                <div><img src="images/amazon.png" alt="amazon"></div>
+                <div><img src="images/microsoft.png" alt="microsoft"></div>
+                <div><img src="images/adobe.png" alt="Adobe"></div>
+                <div><img src="images/Dailyhunt.png" alt="Dailyhunt"></div>
+                <div><img src="images/hsbc.png" style="height: 100px" alt="HSBC"></div>
                 <div><img src="images/innovacer.jpg" alt="Innovaccer"></div>
-                <div><img src="images/soroco.jpg" style="height: 100px" alt="Soroco"></div>
-                <div><img src="images/smartprix1.jpg" alt="SmartPrix"></div>
-                <div><img src="images/Oyo.jpg" alt="Oyo"></div>
-                <div><img src="images/delhivery1.jpg" alt="Delhivery"></div>
-                <div><img src="images/slk.jpg" alt="SLK software"></div>
-                <div><img src="images/sophos.jpg" style="height: 100px" alt="Sophos"></div>
-                <div><img src="images/gapoon1.jpg" style="height: 100px" alt="Gapoon"></div>
+                <div><img src="images/soroco1.png" style="height: 100px; width: 140px" alt="Soroco"></div>
+                <div><img src="images/smartprix1.png" alt="SmartPrix"></div>
+                <div><img src="images/oyo1.png" style="height: 100px" alt="Oyo"></div>
+                <div><img src="images/delhivery1.png" alt="Delhivery"></div>
+                <div><img src="images/sophos.png" style="height: 100px" alt="Sophos"></div>
+                <div><img src="images/gapoon1.png" style="height: 100px" alt="Gapoon"></div>
+                <div><img src="images/slk.png" style="height: 100px" alt="SLK software"></div>
+
             </div>
+        	
             <br><br><br>
       </section>
      
@@ -341,6 +347,13 @@ $('a[href*="#"]')
           document.getElementById('lifeat').click();
           document.getElementById('lifeat').click();
           document.getElementById('clicktext').click();
+        }
+      </script>
+      <script type="text/javascript">
+        var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+        if (isSafari){
+          var x = document.getElementById('scroll_bar');
+          x.style.display = "none";
         }
       </script>
   </body>
